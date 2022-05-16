@@ -40,7 +40,7 @@
                                 Obtenir Un Devis</a>
                             </li> -->
 
-                            <li class="item"><a href="tel:066584515" class="link">
+                            <li class="item"><a href="tel:0641472275" class="link">
                                 <img class="icon" src="images/phone.png" alt="phone icon">
                                   Appeler Maintenant
                                 </a>
@@ -280,7 +280,7 @@
 
         <div class="container">
             <div class="line"></div>
-            <h1 class="titleTemo">GALERIE</h1>
+            <h1 class="titleTemo" id="Galerie">GALERIE</h1>
             <div class="contentGallery">
 
                 <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
@@ -319,7 +319,7 @@
     <div class="coordon">
         <div class="container">
         <div class="box">
-            <h3 class="title-box">Coordonnées</h3>
+            <h3 class="title-box" id="coordonées">Coordonnées</h3>
             <div data-field="phone"><a class="link-crd" href="tel:+212-5377-71166"
                     data-tracking-element-type="3" jslog="56037; track:impression,click"
                     itemprop="telephone" dir="ltr">Appeler maintenant</a>
@@ -401,13 +401,14 @@
         <li onclick= "openC()" class="nav-menu-links "><a href="#temoignages">Témoignages</a></li>
         <li onclick= "openC()" class="nav-menu-links "><a  href="#qsn">Qui sommes-nous&nbsp;?</a>
         </li>
-        <li onclick= "openC()" class="nav-menu-links "><a  href="#">Galerie</a></li>
-        <li onclick= "openC()" class="nav-menu-links "><a  href="#">Coordonnées</a></li>
+        <li onclick= "openC()" class="nav-menu-links "><a  href="#Galerie">Galerie</a></li>
+        <li onclick= "openC()" class="nav-menu-links "><a  href="#coordonées">Coordonnées</a></li>
     </ul>
 
 </div>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
   
@@ -426,14 +427,14 @@
         Username : "omar.elcopa@gmail.com",
         Password : "4EBC3CB32AE4C6D77D644F236CEFE8DFAA6E",
         Port: 2525,
-        To : mail,
+        To : "omar.elcopa@gmail.com",
         From : "omar.elcopa@gmail.com",
-        Subject : "This is the subject",
-        Body : "<html><h2>"+Nom+"</h2><strong>"+msg+"</strong><br></br><em>"+phone+"</em></html>"
+        Subject : "Obtenir un DEVIS",
+        Body : "<html><em>Message envoyé par: </em> <strong>"+mail+"</strong><br><br><em>Nom: </em><strong>"+Nom+"</strong><br><em> Numéro: </em><strong>"+phone+"</strong><br><em>Message: </em><strong>"+msg+"</strong><br></br></html>"
 }).then(
-  message => alert(message)
-);
-
+  message => swal("Bien!", "Votre message à bien été envoyé!", "success").then(function(){
+      location.reload();
+    }));
 }
 </script>
 
