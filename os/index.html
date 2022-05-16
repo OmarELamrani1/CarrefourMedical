@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS HIGH TECH s.a.r.l</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+    <!-- Navbar section -->
+        <header  id="header">
+            <!-- soufiane -->
+        <div class="container">
+            <div class="headerContainer">
+                <div class="headerContent">
+                    <div class="leftContent">
+
+                        <div onclick= "openC()">
+                            <img class="icon mnu" src="images/menu.png" alt="phone icon" >
+                        </div>
+
+                        <!-- <img class="icon" src="images/menu.png" alt="phone icon"> -->
+                        <h1 class="logo">CARREFOUR MEDICAL s.a.r.l</h1>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <div class="Items">
+
+
+                            <li class="item"><a href="#" id="myBtn" class="link">
+                                <img class="icon" src="images/icn2.png" alt="phone icon">
+                                Obtenir Un Devis</a>
+                            </li>
+
+                            <!-- <li class="item"><a href="#" class="link">
+                                <img class="icon" src="images/phone.png" alt="phone icon">
+                                Obtenir Un Devis</a>
+                            </li> -->
+
+                            <li class="item"><a href="tel:066584515" class="link">
+                                <img class="icon" src="images/phone.png" alt="phone icon">
+                                  Appeler Maintenant
+                                </a>
+                              </li>
+                              <li class="item">
+                                  <a class="link"
+                                      href="https://www.google.com/maps/dir//CARREFOUR+MEDICAL+s.a.r.l/data=!4m8!4m7!1m0!1m5!1m1!1s0xda7d2bc7af99afd:0x844a84c9af1665e1!2m2!1d-6.846926!2d34.001689999999996"
+                                      target="_blank" data-tracking-element-type="6"
+                                      jslog="56039; track:impression,click">
+                                      <img class="icon" src="images/icn3.png" alt="phone icon">Itinéraire
+                                  </a>
+                              </li>
+                            
+                              <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h3>Obtenir un DEVIS</h3>
+      </div>
+      <div class="modal-body">
+
+        <div class="contact-wrap w-100 p-md-5 p-4">
+            <!-- <h3 class="mb-4">Get in touch</h3> -->
+            <div id="form-message-warning" class="mb-4"></div> 
+      <!-- <div id="form-message-success" class="mb-4">
+    Your message was sent, thank you!
+      </div> -->
+
+
+
+
+
+            <form action="mailto:omar.elcopa@gmail.com" method="POST" class="contactForm" enctype="text/plain">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- <label class="label" for="name">Full Name</label> -->
+                            <input type="text" class="form-control" name="nom" id="nom" placeholder="Nom" autofocus>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- <label class="label" for="name">Full Name</label> -->
+                            <input type="tel" class="form-control" name="tel" id="tel" placeholder="Numéro telephone">
+                        </div>
+                    </div>
+                    <div class="col-md-6"> 
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="adEmail" placeholder="Adresse email">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="label" for="#">En quoi pouvons-nous vous aider ?</label><br>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Je souhaiterais en savoir plus sur vos disponibilités et tarifs pour les services suivants :"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+
+    <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
+
+                            <button onclick="sendEmail()" class="envoyer" type="submit">Envoyer</button>
+                            <!-- <input class="envoyer" type="submit" value="Envoyer"> -->
+                            <div class="submitting"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        
+      </div>
+      <!-- <div class="modal-footer">
+        <h3>Évitez d'inclure des informations sensibles que vous ne souhaitez pas partager avec cet établissement.</h3>
+      </div> -->
+    </div>
+  
+  </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    <!-- End Navbar section-->
+
+    <!-- Hero section -->
+    <main role="main" id="hero">
+        <div class="container">
+            <div class="content">
+                <form class="leftContentHero">
+                    <h1 class="title">CARREFOUR MEDICAL s.a.r.l</h1>
+                    <p class="text">Magasin De Matériel Chirurgical à Rabat
+                        Ouvre à 09:00 le lundi</p>
+                        <button type="button" class="btnHero" id="btnHero">OBTENIR UN DEVIS</button>
+                    </form>
+                <img class="image" src="images/img.jpg" alt="">
+            </div>
+
+        </div>
+    </main>
+    <!--End Hero section-->
+    <!-- start temognages -->
+        <div class="temo" id="temoignages">
+            <div class="container">
+                <div class="line"></div>
+                <h1 class="titleTemo">TÉMOIGNAGES</h1>
+                <div class="contentTemo">
+                    <div class="textTemo">
+                        <div class="starts">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+
+                        <span class="temp"> il y a 6 ans</span>
+                        </div>
+                        
+                        <p class="par">
+                            Très bonne société, avec un show room très grand et intéressant. La disponibilité des articles proposés sur leur site web, avec le respect des prix des articles en promotion. Un personnel très accueillant et gentil. Vraiment un travail des professionnels.
+                        </p>
+
+                        <a href="#" class="linkTem">-NAZHA N</a>
+                    </div>
+
+
+                    <div class="textTemo">
+                        <div class="starts">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+
+                        <span class="temp"> il y a 6 ans</span>
+                        </div>
+                        
+                        <p class="par">
+                            Je suis cliente de la société CARREFOUR MEDICAL depuis des années. j'ai fait plusieurs achats chez eux, que se soit pour un matériel à usage domestique ou professionnel (pour l’équipement de mon cabinet) j'ai toujours était satisfaite du professionnalisme du personnel et du rapport qualité/prix.
+                        </p>
+
+                        <a href="#" class="linkTem">-Laila I</a>
+                    </div>
+
+
+                    <div class="textTemo">
+                        <div class="starts">
+                            <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+                        <img src="images/icons8-star-24.png" alt="star">
+
+                        <span class="temp"> il y a 6 ans</span>
+                        </div>
+                        
+                        <p class="par">
+                            LA COLLABORATION AVEC VOTRE STRUCTURE EST UNE VERITABLE SATISFACTION ON ESPERE BONNE CONTINUATION
+                        </p>
+
+                        <a href="#" class="linkTem">-MOHAMED l</a>
+                    </div>
+
+                   
+                </div>
+                <div class="links">
+                    <a jslog="66412; track:impression,click;"
+                        href="https://search.google.com/local/writereview?placeid=ChIJ_Zr5erzSpw0R4WUWr8mESoQ"
+                        rel="noreferrer" class="linkTem1">RÉDIGER UN AVIS
+                    </a>
+
+                    <a jslog="66413; track:impression,click;"
+                        href="https://search.google.com/local/reviews?placeid=ChIJ_Zr5erzSpw0R4WUWr8mESoQ"
+                        rel="noreferrer" class="linkTem1">EN SAVOIR PLUS
+                    </a>
+                 </div>
+                
+            </div>
+        </div>
+    <!-- End temognages -->
+
+    <!-- Que Somes Nous section -->
+    <div class="container">
+        <div class="About">
+            
+            
+            <div class="line"></div>
+            <h1 class="titleTemo" id="qsn">QUI SOMMES-NOUS ?</h1>
+                <div class="contentAbout">
+                    <p class="textAbout">
+                        Fondé en 1993, Carrefour medical connait un développement incessant. Sa riche expérience acquise tout au long du temps, alliée à sa force et son professionnalisme lui ont permis de percer dans le marché médical marocain, se positionnant aujourd’hui en tant qu’un des leaders dans le domaine d’importation, de distribution de matériel medical. 
+                    </p>
+
+                    <p class="textAbout">
+                        Carrefour medical est spécialisée dans la vente de matériel médico-technique. Elle compte parmi ses fournisseurs partenaires des leaders mondiaux du secteur. De ce fait, nos clients ont accès aux équipements les plus performants et aux offres les plus instigatrice.
+                        Néanmoins, notre tâche ne se limite pas uniquement à une activité commerciale. Nous disposons d’une structure exhaustive qui peut vous apporter une solution unanime et spécifiquement adaptée à vos besoins. 
+                    </p>
+
+                    <p class="textAbout">
+                        Réellement, Carrefour medical considère les services d’accompagnement une phase tout aussi décisive de sa mission. Marquée pour l’obsession du long terme, une équipe technique qualifiée s’engage à assurer, en plus de l’installation, la formation des opérateurs et des techniciens, le service après vente et la maintenance des acquisitions de nos clients ; garantissant ainsi le bon fonctionnement des équipements et favorisant leurs performances bien plus longtemps que leur durée d'exploitation.
+                    </p>
+
+
+                    <p class="textAbout">
+                        Grâce à ses valeurs humaines, son savoir faire, et le respect de ses engagements, Carrefour medical a conquis la confiance et la fidélité de nombreux professionnels de la santé, autant publics que privés, allant d’établissement hospitaliers et cabinets médicaux.
+                        Des produits de qualité, une équipe toujours à l’écoute, une assistance personnalisée pour répondre à vos besoins … Tout cela fait que notre réseau clientèle s’élargit de jour en jour, et s’affirme en tant que référence dans la profession…parce que la satisfaction de nos clients est considéré comme notre priorité Numéro Un !
+                    </p>
+
+
+                    <p class="textAbout">
+                        Enfin, dans le but de nous rapprocher de notre chère clientèle nous avons mis en place ce site web, qui est souvent mis à jour, et qui va leur permettre d’effectuer leurs commandes, leurs achats en ligne et d’être toujours informer de nos nouveautés et promotions. 
+                    </p>
+
+                    <p class="textAbout">
+                        Venez nous rendre visite sur place : Que vous soyez des clients actuels ou que vous souhaitez simplement découvrir notre entreprise, nos portes vous sont toujours ouvertes pour mieux vous servir.  s. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!-- End Que Somes Nous section -->
+
+
+    <!--Gallery sectoin-->
+    <div class="gallery">
+
+        <div class="container">
+            <div class="line"></div>
+            <h1 class="titleTemo">GALERIE</h1>
+            <div class="contentGallery">
+
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+                <a href="#"> <img class="imageGall" src="images/img.jpg" alt="gallery"></a>
+            
+            </div>
+        </div>
+    </div>
+    <!--End Gallery sectoin-->
+
+
+
+    <!--map-->
+        <div class="Map">
+            <div class="container">
+                <div class="line"></div>
+                <h1 class="titleTemo">NOUS CONTACTER
+                </h1>
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.643486525781!2d-6.84911468478629!3d34.00168998061973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2bc7af99afd%3A0x844a84c9af1665e1!2sCARREFOUR%20MEDICAL%20s.a.r.l!5e0!3m2!1sfr!2sma!4v1652552146850!5m2!1sfr!2sma" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+
+            </div>
+        </div>
+    <!--End mab-->
+
+    <!-- start soufiane  -->
+        <!-- start Coordonnées -->
+    <div class="coordon">
+        <div class="container">
+        <div class="box">
+            <h3 class="title-box">Coordonnées</h3>
+            <div data-field="phone"><a class="link-crd" href="tel:+212-5377-71166"
+                    data-tracking-element-type="3" jslog="56037; track:impression,click"
+                    itemprop="telephone" dir="ltr">Appeler maintenant</a>
+                <ul class="Numbers">
+                    <li dir="ltr">05377-71166</li>
+                    <li dir="ltr">05376-95300</li>
+                    <li dir="ltr">0661-299817</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="title-box">Adresse</h3>
+            <div data-field="address"><a class="link-crd"
+                    href="https://www.google.com/maps/dir//CARREFOUR+MEDICAL+s.a.r.l/data=!4m8!4m7!1m0!1m5!1m1!1s0xda7d2bc7af99afd:0x844a84c9af1665e1!2m2!1d-6.846926!2d34.001689999999996"
+                    target="_blank" data-tracking-element-type="6"
+                    jslog="56039; track:impression,click">Itinéraire</a>
+                <address class="groupe-adesse" itemprop="address">
+                    <div>45, Rue Oued Sebou, Agdal</div>
+                    <div>Rabat 10090</div>
+                    <div>Maroc</div>
+                </address>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="title-box">Horaires d'ouverture</h3>
+            <div>
+                <table itemprop="openingHours">
+                    <tbody>
+                        <tr>
+                            <th class="date-title">lun.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 17:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">mar.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 17:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">mer.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 17:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">jeu.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 17:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">ven.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 17:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">sam.:</th>
+                            <td class="houre-title"><span class="houre-span">09:00 – 12:00</span></td>
+                        </tr>
+                        <tr>
+                            <th class="date-title">dim.:</th>
+                            <td class="houre-title"><span class="houre-span">Fermé</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+<!-- end Coordonnées -->
+<br>
+<div class="footer">
+    <div class="container">
+        <hr>
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            <span>OS HIGH TECH</span> - All Rights Reserved
+        </p>
+    </div>
+</div>
+
+<div class="menu" id="menu">
+
+    <ul class="menu-links">
+        <li onclick= "openC()" class="nav-menu-links "><a href="#temoignages">Témoignages</a></li>
+        <li onclick= "openC()" class="nav-menu-links "><a  href="#qsn">Qui sommes-nous&nbsp;?</a>
+        </li>
+        <li onclick= "openC()" class="nav-menu-links "><a  href="#">Galerie</a></li>
+        <li onclick= "openC()" class="nav-menu-links "><a  href="#">Coordonnées</a></li>
+    </ul>
+
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    var mail = document.getElementById("adEmail").value;
+    // alert(mail);
+
+    function sendEmail() {
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "omar.elcopa@gmail.com",
+        Password : "4EBC3CB32AE4C6D77D644F236CEFE8DFAA6E",
+        Port: 2525,
+        To : 'elamrani.omaar@gmail.com',
+        From : "omar.elcopa@gmail.com",
+        Subject : "This is the subject",
+        Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+}).then(
+  message => alert(message)
+);
+
+}
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    var heroBtn = document.getElementById("btnHero");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+      document.body.style.overflow = 'hidden';
+    }
+    heroBtn.onclick = function() {
+      modal.style.display = "block";
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+      document.body.style.overflow = 'visible'
+
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = 'visible'
+
+      }
+    }
+
+
+    function openC(){
+        if(document.getElementById('menu').style.display == 'none')
+        document.getElementById('menu').style.display = 'block';
+
+        else if(document.getElementById('menu').style.display == 'block')
+         document.getElementById('menu').style.display = 'none';
+
+        else
+        document.getElementById('menu').style.display = 'block';    
+    }
+
+
+    </script>
+</body>
+</html>
