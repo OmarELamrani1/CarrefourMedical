@@ -106,7 +106,7 @@
 
     <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
 
-                            <button onclick="sendEmail()" class="envoyer" type="submit">Envoyer</button>
+                            <button onclick="sendEmail()" class="envoyer" >Envoyer</button>
                             <!-- <input class="envoyer" type="submit" value="Envoyer"> -->
                             <div class="submitting"></div>
                         </div>
@@ -410,20 +410,26 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script>
-    var mail = document.getElementById("adEmail").value;
-    // alert(mail);
+  
 
     function sendEmail() {
+        mail = document.getElementById("adEmail").value;
+        msg = document.getElementById("message").value;
+        Nom = document.getElementById("nom").value;
+        phone = document.getElementById("tel").value;
 
+
+        // message
+    //  alert(mail);
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "omar.elcopa@gmail.com",
         Password : "4EBC3CB32AE4C6D77D644F236CEFE8DFAA6E",
         Port: 2525,
-        To : 'elamrani.omaar@gmail.com',
+        To : mail,
         From : "omar.elcopa@gmail.com",
         Subject : "This is the subject",
-        Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+        Body : "<html><h2>"+Nom+"</h2><strong>"+msg+"</strong><br></br><em>"+phone+"</em></html>"
 }).then(
   message => alert(message)
 );
