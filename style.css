@@ -261,6 +261,18 @@ html {
 
 /*End of gallery section*/
 
+.envoyer {
+  cursor: pointer;
+  background-color: #8552e4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 90%;
